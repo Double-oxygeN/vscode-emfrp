@@ -4,6 +4,7 @@
 	"patterns": [
 		{ "include": "#comments" },
 		{ "include": "#embedded-commands" },
+		{ "include": "#toplevels" },
 		{ "include": "#literals" }
 	],
 	"repository": {
@@ -19,6 +20,96 @@
 				"1": { "name": "punctuation.command.start.emfrp" }
 			},
 			"name": "meta.declaration.command.emfrp"
+		},
+		"toplevels": {
+			"patterns": [
+				{ "include": "#module-def" },
+				{ "include": "#input-def" },
+				{ "include": "#output-def" },
+				{ "include": "#use-materials" },
+				{ "include": "#data-def" },
+				{ "include": "#func-def" },
+				{ "include": "#node-def" },
+				{ "include": "#type-def" },
+				{ "include": "#infix-def" },
+				{ "include": "#primtype-def" },
+				{ "include": "#primfunc-def" },
+				{ "include": "#newnode-def" }
+			],
+			"repository": {
+				"module-def": {
+					"match": "\\b(module)\\b",
+					"captures": {
+						"1": { "name": "keyword.other.module.emfrp" }
+					}
+				},
+				"input-def": {
+					"match": "\\b(in)\\b",
+					"captures": {
+						"1": { "name": "keyword.other.input.emfrp" }
+					}
+				},
+				"output-def": {
+					"match": "\\b(out)\\b",
+					"captures": {
+						"1": { "name": "keyword.other.output.emfrp" }
+					}
+				},
+				"use-materials": {
+					"match": "\\b(use)\\b",
+					"captures": {
+						"1": { "name": "keyword.other.use.emfrp" }
+					}
+				},
+				"data-def": {
+					"match": "\\b(data)\\b",
+					"captures": {
+						"1": { "name": "keyword.other.data.emfrp" }
+					}
+				},
+				"func-def": {
+					"match": "\\b(func)\\b",
+					"captures": {
+						"1": { "name": "keyword.other.func.emfrp" }
+					}
+				},
+				"node-def": {
+					"match": "\\b(node)\\b",
+					"captures": {
+						"1": { "name": "keyword.other.node.emfrp" }
+					}
+				},
+				"type-def": {
+					"match": "\\b(type)\\b",
+					"captures": {
+						"1": { "name": "keyword.other.type.emfrp" }
+					}
+				},
+				"infix-def": {
+					"match": "\\b(infix[lr]?)\\b",
+					"captures": {
+						"1": { "name": "keyword.other.infix.emfrp" }
+					}
+				},
+				"primtype-def": {
+					"match": "\\b(primtype)\\b",
+					"captures": {
+						"1": { "name": "keyword.other.primtype.emfrp" }
+					}
+				},
+				"primfunc-def": {
+					"match": "\\b(primfunc)\\b",
+					"captures": {
+						"1": { "name": "keyword.other.primfunc.emfrp" }
+					}
+				},
+				"newnode-def": {
+					"match": "\\b(newnode)\\b",
+					"captures": {
+						"1": { "name": "keyword.other.newnode.emfrp" }
+					}
+				}
+			}
 		},
 		"literals": {
 			"patterns": [
