@@ -10,6 +10,15 @@
       "$0"
     ]
   },
+  "Material Header": {
+    "prefix": "material",
+    "body": [
+      "material $1",
+      "use ${2:Std}",
+      "",
+      "$0"
+    ]
+  },
   "Data Definition": {
     "prefix": "data",
     "body": "data ${1:id} = ${2:exp}"
