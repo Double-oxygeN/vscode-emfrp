@@ -17,5 +17,13 @@
   "If Expression": {
     "prefix": "if",
     "body": "if $1 then $2 else $3"
+  },
+  "Pattern Match": {
+    "prefix": "of",
+    "body": [
+      "of:",
+      "  $1 -> ${2:exp}",
+      "  _ -> ${3:exp}"
+    ]
   }
 }
