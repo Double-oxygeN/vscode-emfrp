@@ -30,6 +30,10 @@
       "  $4"
     ]
   },
+  "Node Definition": {
+    "prefix": "node",
+    "body": "node ${1:init[${2:val}] }${3:id} = $0"
+  },
   "If Expression": {
     "prefix": "if",
     "body": "if $1 then $2 else $3"
