@@ -7,7 +7,7 @@
       "out $3",
       "use ${4:Std}",
       "",
-      ""
+      "$0"
     ]
   },
   "Data Definition": {
