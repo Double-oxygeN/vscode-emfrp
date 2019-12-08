@@ -1,3 +1,6 @@
 {
-  "licenser.author": "Double-oxygeN"
+  "licenser.author": "Double-oxygeN",
+  "markdown-checkbox.checkmark": "x",
+  "markdown-checkbox.dateWhenChecked": false,
+  "markdown-checkbox.typeOfBulletPoint": "-"
 }
