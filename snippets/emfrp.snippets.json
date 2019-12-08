@@ -1,2 +1,6 @@
 {
+  "Data Definition": {
+    "prefix": "data",
+    "body": "data ${1:id} = ${2:exp}"
+  }
 }
