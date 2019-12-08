@@ -2,8 +2,14 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "Emfrp",
 	"patterns": [
+		{ "include": "#comment" }
 	],
 	"repository": {
+		"comment": {
+			"begin": "(?<!#)#",
+			"end": "(?=$)",
+			"name": "comment.line.number-sign"
+		}
 	},
 	"scopeName": "source.mfrp"
 }
