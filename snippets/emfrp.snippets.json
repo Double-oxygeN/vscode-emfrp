@@ -25,5 +25,9 @@
       "  $1 -> ${2:exp}",
       "  _ -> ${3:exp}"
     ]
+  },
+  "Newnode": {
+    "prefix": "newnode",
+    "body": "newnode ${1:subout} = ${2:SubModule}(${3:subin})"
   }
 }
