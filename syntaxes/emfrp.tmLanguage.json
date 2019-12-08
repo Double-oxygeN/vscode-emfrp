@@ -3,7 +3,8 @@
 	"name": "Emfrp",
 	"patterns": [
 		{ "include": "#comments" },
-		{ "include": "#embedded-commands" }
+		{ "include": "#embedded-commands" },
+		{ "include": "#literals" }
 	],
 	"repository": {
 		"comments": {
@@ -18,6 +19,17 @@
 				"1": { "name": "punctuation.command.start.emfrp" }
 			},
 			"name": "meta.declaration.command.emfrp"
+		},
+		"literals": {
+			"patterns": [
+				{ "include": "#integral-literals" }
+			],
+			"repository": {
+				"integral-literals": {
+					"match": "(?<![A-Za-z0-9_.])(?:0|[1-9][0-9]*)(?![A-Za-z0-9_.])",
+					"name": "constant.numeric.integer.emfrp"
+				}
+			}
 		}
 	},
 	"scopeName": "source.mfrp"
