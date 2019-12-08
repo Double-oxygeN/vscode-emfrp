@@ -11,5 +11,9 @@
   "Data Definition": {
     "prefix": "data",
     "body": "data ${1:id} = ${2:exp}"
+  },
+  "If Expression": {
+    "prefix": "if",
+    "body": "if $1 then $2 else $3"
   }
 }
