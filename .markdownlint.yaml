@@ -1,0 +1,9 @@
+default: true
+heading-style:
+  style: "atx"
+line-length: false
+no-bare-urls: false
+hr-style:
+  style: "---"
+code-block-style:
+  style: "fenced"

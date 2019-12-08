@@ -1,4 +1,7 @@
 .vscode/**
 .vscode-test/**
 .gitignore
+.markdownlint.yaml
 vsc-extension-quickstart.md
+
+tmp/**
