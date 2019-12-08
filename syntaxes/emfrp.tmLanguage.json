@@ -2,8 +2,23 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "Emfrp",
 	"patterns": [
+		{ "include": "#comments" },
+		{ "include": "#embedded-commands" }
 	],
 	"repository": {
+		"comments": {
+			"begin": "(?<!#)#(?![@-])",
+			"end": "(?=$)",
+			"name": "comment.line.number-sign.emfrp"
+		},
+		"embedded-commands": {
+			"begin": "(?<!#)(#[@-])",
+			"end": "(?=$)",
+			"beginCaptures": {
+				"1": { "name": "punctuation.command.start.emfrp" }
+			},
+			"name": "meta.declaration.command.emfrp"
+		}
 	},
 	"scopeName": "source.mfrp"
 }
