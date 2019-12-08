@@ -21,13 +21,13 @@
   },
   "Data Definition": {
     "prefix": "data",
-    "body": "data ${1:id} = ${2:exp}"
+    "body": "data ${1:id} = $0"
   },
   "Function Definition": {
     "prefix": "func",
     "body": [
-      "func ${1:id}(${2:input})${3:: Type} =",
-      "  $4"
+      "func ${1:id}(${2:input})${3:: ${4:Type}} =",
+      "  $0"
     ]
   },
   "Node Definition": {
@@ -36,14 +36,14 @@
   },
   "If Expression": {
     "prefix": "if",
-    "body": "if $1 then $2 else $3"
+    "body": "if $1 then $2 else $0"
   },
   "Pattern Match": {
     "prefix": "of",
     "body": [
       "of:",
       "  $1 -> ${2:exp}",
-      "  _ -> ${3:exp}"
+      "  _ -> $0"
     ]
   },
   "Newnode": {
