@@ -21,6 +21,12 @@
             "language": "emfrp",
             "scopeName": "source.mfrp",
             "path": "./syntaxes/emfrp.tmLanguage.json"
-        }]
+        }],
+        "snippets": [
+            {
+                "language": "emfrp",
+                "path": "./snippets/emfrp.snippets.json"
+            }
+        ]
     }
 }

@@ -5,6 +5,7 @@ VSCode Language Support Extension for [Emfrp](https://github.com/sawaken/emfrp)
 ## Features
 
 - Syntax highlight
+- Code completion
 
 <!--
 

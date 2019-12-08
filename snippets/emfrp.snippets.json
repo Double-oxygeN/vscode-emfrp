@@ -1,0 +1,53 @@
+{
+  "Module Header": {
+    "prefix": "module",
+    "body": [
+      "module $TM_FILENAME_BASE",
+      "in $1",
+      "out $2",
+      "use ${3:Std}",
+      "",
+      "$0"
+    ]
+  },
+  "Material Header": {
+    "prefix": "material",
+    "body": [
+      "material $TM_FILENAME_BASE",
+      "use ${1:Std}",
+      "",
+      "$0"
+    ]
+  },
+  "Data Definition": {
+    "prefix": "data",
+    "body": "data ${1:id} = $0"
+  },
+  "Function Definition": {
+    "prefix": "func",
+    "body": [
+      "func ${1:id}(${2:input})${3:: ${4:Type}} =",
+      "  $0"
+    ]
+  },
+  "Node Definition": {
+    "prefix": "node",
+    "body": "node ${1:init[${2:val}] }${3:id} = $0"
+  },
+  "If Expression": {
+    "prefix": "if",
+    "body": "if $1 then $2 else $0"
+  },
+  "Pattern Match": {
+    "prefix": "of",
+    "body": [
+      "of:",
+      "  $1 -> ${2:exp}",
+      "  _ -> $0"
+    ]
+  },
+  "Newnode": {
+    "prefix": "newnode",
+    "body": "newnode ${1:subout} = ${2:SubModule}(${3:subin})"
+  }
+}
