@@ -72,7 +72,7 @@ Added features X, Y, and Z.
 ## TODO
 
 - [x] ~~*Highlight comments*~~
-- [ ] Highlight literals
+- [x] ~~*Highlight literals*~~
 - [ ] Highlight keywords
 - [ ] Highlight identifiers
 - [x] ~~*Some snippets*~~
