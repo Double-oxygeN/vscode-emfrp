@@ -197,8 +197,11 @@
 			],
 			"repository": {
 				"char-literals": {
-					"match": "'(?:\\\\.|[^\\\\'])'",
-					"name": "constant.character.emfrp"
+					"match": "'(?:(\\\\.)|[^\\\\'])'",
+					"name": "string.quoted.single.emfrp",
+					"captures": {
+						"1": { "name": "constant.character.escape.emfrp" }
+					}
 				},
 				"integral-literals": {
 					"match": "(?<![A-Za-z0-9_.])(?:0|[1-9][0-9]*)(?![A-Za-z0-9_.])",
