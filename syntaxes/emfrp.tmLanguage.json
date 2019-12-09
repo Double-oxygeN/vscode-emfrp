@@ -219,7 +219,8 @@
 			"patterns": [
 				{ "include": "#special-vars" },
 				{ "include": "#std-types" },
-				{ "include": "#other-types-or-modules" }
+				{ "include": "#other-types-or-modules" },
+				{ "include": "#function-calls" }
 			],
 			"repository": {
 				"special-vars": {
@@ -259,6 +260,12 @@
 					"match": "\\b([A-Z][A-Za-z0-9_]*)\\b",
 					"captures": {
 						"1": { "name": "support.type.emfrp" }
+					}
+				},
+				"function-calls": {
+					"match": "\\b([A-Za-z][A-Za-z0-9_]*)(?=\\s*\\()",
+					"captures": {
+						"1": { "name": "support.function.emfrp" }
 					}
 				}
 			}
