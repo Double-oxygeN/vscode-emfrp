@@ -5,6 +5,7 @@
 		{ "include": "#comments" },
 		{ "include": "#embedded-commands" },
 		{ "include": "#toplevels" },
+		{ "include": "#node-decorators" },
 		{ "include": "#literals" }
 	],
 	"repository": {
@@ -107,6 +108,41 @@
 					"match": "\\b(newnode)\\b",
 					"captures": {
 						"1": { "name": "keyword.other.newnode.emfrp" }
+					}
+				}
+			}
+		},
+		"node-decorators": {
+			"patterns": [
+				{ "include": "#initial-value" },
+				{ "include": "#from-dependency" },
+				{ "include": "#as-alias" }
+			],
+			"repository": {
+				"initial-value": {
+					"begin": "\\b(init)\\s*\\[",
+					"end": "\\]",
+					"beginCaptures": {
+						"1": { "name": "keyword.other.init.emfrp" }
+					},
+					"patterns": [
+						{ "include": "#literals" }
+					]
+				},
+				"from-dependency": {
+					"begin": "\\b(from)\\s*\\[",
+					"end": "\\]",
+					"beginCaptures": {
+						"1": { "name": "keyword.other.from.emfrp" }
+					},
+					"patterns": [
+						{ "include": "#as-alias" }
+					]
+				},
+				"as-alias": {
+					"match": "\\b(as)\\b",
+					"captures": {
+						"1": { "name": "keyword.other.as.emfrp" }
 					}
 				}
 			}
