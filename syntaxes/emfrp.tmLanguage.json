@@ -6,6 +6,7 @@
 		{ "include": "#embedded-commands" },
 		{ "include": "#toplevels" },
 		{ "include": "#node-decorators" },
+		{ "include": "#controls" },
 		{ "include": "#literals" }
 	],
 	"repository": {
@@ -143,6 +144,27 @@
 					"match": "\\b(as)\\b",
 					"captures": {
 						"1": { "name": "keyword.other.as.emfrp" }
+					}
+				}
+			}
+		},
+		"controls": {
+			"patterns": [
+				{ "include": "#if-expression" },
+				{ "include": "#pattern-match" }
+			],
+			"repository": {
+				"if-expression": {
+					"match": "\\b(if|then|else)\\b",
+					"captures": {
+						"1": { "name": "keyword.control.if.emfrp" }
+					}
+				},
+				"pattern-match": {
+					"match": "\\b(of)(\\:)?",
+					"captures": {
+						"1": { "name": "keyword.control.of.emfrp" },
+						"2": { "name": "keyword.operator.of.emfrp" }
 					}
 				}
 			}
