@@ -4,11 +4,20 @@
     "description": "Emfrp Language Support",
     "version": "0.0.1",
     "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Double-oxygeN/vscode-emfrp.git"
+    },
     "engines": {
         "vscode": "^1.40.0"
     },
     "categories": [
-        "Programming Languages"
+        "Programming Languages",
+        "Snippets"
+    ],
+    "keywords": [
+        "Emfrp",
+        "FRP"
     ],
     "contributes": {
         "languages": [{
