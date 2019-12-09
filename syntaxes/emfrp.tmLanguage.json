@@ -217,7 +217,8 @@
 		},
 		"identifiers": {
 			"patterns": [
-				{ "include": "#special-vars" }
+				{ "include": "#special-vars" },
+				{ "include": "#std-types" }
 			],
 			"repository": {
 				"special-vars": {
@@ -245,6 +246,12 @@
 								"1": { "name": "constant.language.opt.emfrp" }
 							}
 						}
+					}
+				},
+				"std-types": {
+					"match": "\\b(Int|Double|Bool|Maybe|Opt|Unit|Tuple[1-7]|Pair)\\b",
+					"captures": {
+						"1": { "name": "support.type.std.emfrp" }
 					}
 				}
 			}
