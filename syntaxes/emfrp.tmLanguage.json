@@ -8,7 +8,8 @@
 		{ "include": "#node-decorators" },
 		{ "include": "#controls" },
 		{ "include": "#operators" },
-		{ "include": "#literals" }
+		{ "include": "#literals" },
+		{ "include": "#identifiers" }
 	],
 	"repository": {
 		"comments": {
@@ -129,7 +130,8 @@
 					},
 					"patterns": [
 						{ "include": "#literals" },
-						{ "include": "#operators" }
+						{ "include": "#operators" },
+						{ "include": "#identifiers" }
 					]
 				},
 				"from-dependency": {
@@ -210,6 +212,24 @@
 				"floating-literals": {
 					"match": "(?<![A-Za-z0-9_.])(?:0|[1-9][0-9]*)\\.[0-9]+(?![A-Za-z0-9_.])",
 					"name": "constant.numeric.float.emfrp"
+				}
+			}
+		},
+		"identifiers": {
+			"patterns": [
+				{ "include": "#special-vars" }
+			],
+			"repository": {
+				"special-vars": {
+					"patterns": [
+						{ "include": "#boolean-values" }
+					],
+					"repository": {
+						"boolean-values": {
+							"match": "\\b(True|False)\\b",
+							"name": "constant.language.boolean.emfrp"
+						}
+					}
 				}
 			}
 		}
