@@ -133,7 +133,7 @@
 					]
 				},
 				"from-dependency": {
-					"begin": "\\b(from)\\s*\\[",
+					"begin": "\\b(from)\\[",
 					"end": "\\]",
 					"beginCaptures": {
 						"1": { "name": "keyword.other.from.emfrp" }
