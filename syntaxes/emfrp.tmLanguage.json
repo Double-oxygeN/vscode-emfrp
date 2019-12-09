@@ -222,12 +222,28 @@
 			"repository": {
 				"special-vars": {
 					"patterns": [
-						{ "include": "#boolean-values" }
+						{ "include": "#boolean-values" },
+						{ "include": "#maybe-values" },
+						{ "include": "#optional-values" }
 					],
 					"repository": {
 						"boolean-values": {
 							"match": "\\b(True|False)\\b",
-							"name": "constant.language.boolean.emfrp"
+							"captures": {
+								"1": { "name": "constant.language.boolean.emfrp" }
+							}
+						},
+						"maybe-values": {
+							"match": "\\b(Just|Nothing)\\b",
+							"captures": {
+								"1": { "name": "constant.language.maybe.emfrp" }
+							}
+						},
+						"optional-values": {
+							"match": "\\b(Some|None)\\b",
+							"captures": {
+								"1": { "name": "constant.language.opt.emfrp" }
+							}
 						}
 					}
 				}
