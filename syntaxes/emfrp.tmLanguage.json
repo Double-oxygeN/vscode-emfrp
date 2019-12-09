@@ -7,6 +7,7 @@
 		{ "include": "#toplevels" },
 		{ "include": "#node-decorators" },
 		{ "include": "#controls" },
+		{ "include": "#operators" },
 		{ "include": "#literals" }
 	],
 	"repository": {
@@ -127,7 +128,8 @@
 						"1": { "name": "keyword.other.init.emfrp" }
 					},
 					"patterns": [
-						{ "include": "#literals" }
+						{ "include": "#literals" },
+						{ "include": "#operators" }
 					]
 				},
 				"from-dependency": {
@@ -137,7 +139,8 @@
 						"1": { "name": "keyword.other.from.emfrp" }
 					},
 					"patterns": [
-						{ "include": "#as-alias" }
+						{ "include": "#as-alias" },
+						{ "include": "#operators" }
 					]
 				},
 				"as-alias": {
@@ -165,6 +168,19 @@
 					"captures": {
 						"1": { "name": "keyword.control.of.emfrp" },
 						"2": { "name": "keyword.operator.of.emfrp" }
+					}
+				}
+			}
+		},
+		"operators": {
+			"patterns": [
+				{ "include": "#at-last" }
+			],
+			"repository": {
+				"at-last": {
+					"match": "(?<=[A-Za-z0-9_])(@last)\\b",
+					"captures": {
+						"1": { "name": "keyword.operator.atlast.emfrp" }
 					}
 				}
 			}
