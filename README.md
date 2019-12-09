@@ -73,7 +73,7 @@ Added features X, Y, and Z.
 
 - [x] ~~*Highlight comments*~~
 - [x] ~~*Highlight literals*~~
-- [ ] Highlight keywords
+- [x] ~~*Highlight keywords*~~
 - [ ] Highlight identifiers
 - [x] ~~*Some snippets*~~
 
