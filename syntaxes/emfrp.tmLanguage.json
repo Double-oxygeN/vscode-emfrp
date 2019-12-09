@@ -218,7 +218,8 @@
 		"identifiers": {
 			"patterns": [
 				{ "include": "#special-vars" },
-				{ "include": "#std-types" }
+				{ "include": "#std-types" },
+				{ "include": "#other-types-or-modules" }
 			],
 			"repository": {
 				"special-vars": {
@@ -251,7 +252,13 @@
 				"std-types": {
 					"match": "\\b(Int|Double|Bool|Maybe|Opt|Unit|Tuple[1-7]|Pair)\\b",
 					"captures": {
-						"1": { "name": "support.type.std.emfrp" }
+						"1": { "name": "storage.type.std.emfrp" }
+					}
+				},
+				"other-types-or-modules": {
+					"match": "\\b([A-Z][A-Za-z0-9_]*)\\b",
+					"captures": {
+						"1": { "name": "support.type.emfrp" }
 					}
 				}
 			}
