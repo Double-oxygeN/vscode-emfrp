@@ -74,7 +74,7 @@ Added features X, Y, and Z.
 - [x] ~~*Highlight comments*~~
 - [x] ~~*Highlight literals*~~
 - [x] ~~*Highlight keywords*~~
-- [ ] Highlight identifiers
+- [x] ~~*Highlight identifiers*~~
 - [x] ~~*Some snippets*~~
 
 ## License
