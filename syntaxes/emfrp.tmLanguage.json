@@ -176,7 +176,7 @@
 			"patterns": [
 				{ "include": "#at-last" },
 				{
-					"match": "[!#$%&*+./<=>?@\\\\^|\\-~]+",
+					"match": "[!#$%&*+./<=>?@\\\\^|\\-~]+|`[a-z][A-Za-z0-9_]*`",
 					"name": "keyword.operator.emfrp"
 				}
 			],
