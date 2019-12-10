@@ -23,7 +23,19 @@
 			"beginCaptures": {
 				"1": { "name": "punctuation.command.start.emfrp" }
 			},
-			"name": "meta.declaration.command.emfrp"
+			"name": "comment.line.command.emfrp",
+			"patterns": [
+				{
+					"match": "(:[a-z-]*)\\s+",
+					"captures": {
+						"1": { "name": "entity.other.attribute-name.command.emfrp" }
+					}
+				},
+				{ "include": "#controls" },
+				{ "include": "#operators" },
+				{ "include": "#literals" },
+				{ "include": "#identifiers" }
+			]
 		},
 		"toplevels": {
 			"patterns": [
